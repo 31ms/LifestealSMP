@@ -1,9 +1,0 @@
-xyz\propsik\lifesteal\Items\ReviveBeacon.class
-xyz\propsik\lifesteal\Listeners\ItemListeners.class
-xyz\propsik\lifesteal\Lifesteal.class
-xyz\propsik\lifesteal\Items\Heart.class
-xyz\propsik\lifesteal\Utilities.class
-xyz\propsik\lifesteal\Items\CraftedHeart.class
-xyz\propsik\lifesteal\Commands\GiveItemsCommand.class
-xyz\propsik\lifesteal\Commands\WithdrawCommand.class
-xyz\propsik\lifesteal\Listeners\HeartsListener.class
