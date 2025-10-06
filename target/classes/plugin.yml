@@ -1,0 +1,10 @@
+name: Lifesteal
+version: '1.0-ALPHA'
+main: xyz.propsik.lifesteal.Lifesteal
+api-version: '1.21'
+commands:
+  giveitems:
+    permission: "staff.admin"
+  withdraw:
+    description: "Withdraw hearts."
+    usage: "§4§lUSAGE: §c/withdraw <number>"
