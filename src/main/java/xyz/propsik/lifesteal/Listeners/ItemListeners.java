@@ -6,7 +6,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
-import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.Inventory;
@@ -101,20 +100,6 @@ public class ItemListeners implements Listener {
                 } else {
                     e.getWhoClicked().sendMessage(ChatColor.RED + "That player is not banned.");
                 }
-            }
-        }
-    }
-    @EventHandler
-    private void onDamage(EntityDamageByEntityEvent e) {
-        if(e.getDamager() instanceof Player attacker) {
-            if(attacker.hasCooldown(Material.MACE) && attacker.getInventory().getItemInMainHand().getType().equals(Material.MACE))
-            {
-                e.setCancelled(true);
-                return;
-            }
-            if(attacker.getInventory().getItemInMainHand().getType().equals(Material.MACE))
-            {
-                attacker.setCooldown(Material.MACE, 200);
             }
         }
     }
